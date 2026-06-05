@@ -135,13 +135,71 @@ A significant increase in EV adoption is observed after 2020, indicating acceler
 
 ## 📸 Dashboard Preview
 
-Add dashboard screenshot here.
+<img width="3198" height="1798" alt="Dashboard 1 (1)" src="https://github.com/user-attachments/assets/b9e966f5-2f5e-4bd8-9a48-5ae02a2db83f" />
 
----
+# Dataset
 
-## 👨‍💻 Author
+This project uses the Electric Vehicle Population Data dataset from Kaggle.
+
+Dataset Source:
+https://www.kaggle.com/datasets/ratikkakkar/electric-vehicle-population-data
+
+### Load Dataset Using Python
+
+# Install dependencies
+# pip install kagglehub[pandas-datasets]
+
+import kagglehub
+from kagglehub import KaggleDatasetAdapter
+
+file_path = ""
+
+df = kagglehub.load_dataset(
+    KaggleDatasetAdapter.PANDAS,
+    "ratikkakkar/electric-vehicle-population-data",
+    file_path
+)
+
+print(df.head())
+
+## Features
+
+- EV adoption trend analysis
+- BEV vs PHEV comparison
+- State-wise EV distribution
+- Manufacturer performance analysis
+- CAFV eligibility insights
+- Interactive Tableau dashboard
+
+## Project Files
+
+- Electric_Vehicle_Population_Data.csv – Dataset
+- EV DATA Analysis 1.twbx – Tableau Workbook
+- Electric Vehicle Presentation.pptx – Project Presentation
+- Dashboard screenshots and branding assets
+
+## Tech Stack
+
+- Tableau
+- Python
+- Pandas
+- KaggleHub
+- CSV Data Processing
+
+## Dashboard KPIs
+
+- Total Vehicles
+- Average Electric Range
+- Total BEV Vehicles
+- Total PHEV Vehicles
+- CAFV Eligibility Analysis
+
+## Author
 
 Kailash Mahadev Aghav
+---
+
+
 
 Data Science Student | Data Analyst | Tableau Developer
 
